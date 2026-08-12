@@ -40,6 +40,13 @@ data class DetectedText(
     val boundingBox: android.graphics.Rect
 )
 
+data class IdentityStats(
+    val total: Int = 0,
+    val withdrawn: Int = 0,
+    val remaining: Int = 0,
+    val withdrawnPercentage: Float = 0f
+)
+
 @OptIn(FlowPreview::class)
 class IdentityViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: IdentityRepository
@@ -68,6 +75,11 @@ class IdentityViewModel(application: Application) : AndroidViewModel(application
     var isProcessingImage by mutableStateOf(false)
         private set
 
+    var stats by mutableStateOf(IdentityStats())
+        private set
+
+    private var allIdentities = emptyList<Identity>()
+
     init {
         val dao = AppDatabase.getDatabase(application).identityDao()
         repository = IdentityRepository(dao)
@@ -86,6 +98,30 @@ class IdentityViewModel(application: Application) : AndroidViewModel(application
                     }
                 }
         }
+
+        // Observe stats and keep internal list updated
+        viewModelScope.launch {
+            dao.getAllIdentities().collect { list ->
+                allIdentities = list
+                val total = list.size
+                val withdrawn = list.count { it.retirada }
+                val remaining = total - withdrawn
+                val percentage = if (total > 0) (withdrawn.toFloat() / total) * 100 else 0f
+                stats = IdentityStats(total, withdrawn, remaining, percentage)
+            }
+        }
+    }
+
+    fun showWithdrawn() {
+        searchQuery = ""
+        _searchQuery.value = ""
+        searchResults = allIdentities.filter { it.retirada }
+    }
+
+    fun showPending() {
+        searchQuery = ""
+        _searchQuery.value = ""
+        searchResults = allIdentities.filter { !it.retirada }
     }
 
     fun onSearchQueryChange(newQuery: String) {

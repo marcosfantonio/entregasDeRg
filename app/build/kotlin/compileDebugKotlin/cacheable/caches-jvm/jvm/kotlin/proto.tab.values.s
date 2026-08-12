@@ -1,1 +1,1 @@
-İoûmãqŞrİs×s
+İoûmãqŞrİs×sÍsÄw
