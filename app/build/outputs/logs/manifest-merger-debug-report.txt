@@ -4,11 +4,12 @@ ADDED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidM
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml:2:1-26:12
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml:2:1-26:12
-MERGED from [androidx.camera:camera-video:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/42a928a436996a75134fe1fa5b83adae/transformed/jetified-camera-video-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:17:1-36:12
-MERGED from [androidx.camera:camera-view:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/8206d2d62509208de93f0cf10d9dff65/transformed/jetified-camera-view-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/5a3e0557c322d2580d17fe86bf39ea47/transformed/jetified-camera-lifecycle-1.3.4/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-video:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/8c6c9671a471d292c8e8f5d3da0693e0/transformed/jetified-camera-video-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-mlkit-vision:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deb27142db8fc34aeb1c331280b39b4b/transformed/jetified-camera-mlkit-vision-1.4.0/AndroidManifest.xml:14:1-22:12
+MERGED from [androidx.camera:camera-view:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deda970766ca04d071debc1cc1752328/transformed/jetified-camera-view-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/fff698a263cc9bc0a7e8b2a5842b86ba/transformed/jetified-camera-lifecycle-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.mlkit:text-recognition:16.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/379e2a6a0dbd6c5cab174cf5d6c425b6/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/9a0266c22c1083e863cef3e362b00775/transformed/jetified-play-services-mlkit-text-recognition-19.0.0/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.mlkit:text-recognition-bundled-common:16.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/38050c1feecf6c3a4247f9bfac106e92/transformed/jetified-text-recognition-bundled-common-16.0.0/AndroidManifest.xml:2:1-7:12
@@ -84,19 +85,20 @@ MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.8] /home/marc
 MERGED from [androidx.compose.runtime:runtime-android:1.6.8] /home/marcos/.gradle/caches/9.3.0/transforms/3f1be27ad9050ff0f8efa638aa837224/transformed/jetified-runtime-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/3a48ba895fc9b87af76efd4fe43c4f43/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/daf53e71c56c4fedad8b4ec098e86fee/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/3f14b405063178bf56fbccf1c5868ed5/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/daebd0bea398732ff749de3f5d57387c/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/3739525ea6fe5173bfe6e9c4019a9111/transformed/jetified-tracing-ktx-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/marcos/.gradle/caches/9.3.0/transforms/c36a9ffabcf100874b0efa3439ddd9d0/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/88c3e965b540a95041e2f52b190a4e57/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/2e789d60a40633f0ba350177c1930819/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/marcos/.gradle/caches/9.3.0/transforms/82273103e546a819ebf025aa4a6c99bc/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/marcos/.gradle/caches/9.3.0/transforms/b8d3525c005d118296c8867027429909/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/marcos/.gradle/caches/9.3.0/transforms/b11817eeb7c9ba448af0f0a0054e4526/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/marcos/.gradle/caches/9.3.0/transforms/9ef25cf531b4c089bc05261b8b7ee886/transformed/jetified-transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.1.0] /home/marcos/.gradle/caches/9.3.0/transforms/e81c599d60f1bc3d0059d40bf4985d81/transformed/jetified-firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/marcos/.gradle/caches/9.3.0/transforms/d4112276fd1aca98d95bd56f6bf80537/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/571591f529dc50b1eb8c9143dc28cd1e/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/db3e4bfa5f3cccef0fa90db3f10693bc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/marcos/.gradle/caches/9.3.0/transforms/96cf9148c0ef602618ef05ef4186913e/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 	package
@@ -126,10 +128,10 @@ ADDED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidM
 application
 ADDED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml:8:5-24:19
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml:8:5-24:19
-MERGED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:23:5-34:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/337a2a780e0c5b88a4094fedfb264563/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/337a2a780e0c5b88a4094fedfb264563/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /home/marcos/.gradle/caches/9.3.0/transforms/8463aae8ea19488371056f66be16ab2a/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
@@ -152,16 +154,16 @@ MERGED from [androidx.core:core:1.13.1] /home/marcos/.gradle/caches/9.3.0/transf
 MERGED from [androidx.core:core:1.13.1] /home/marcos/.gradle/caches/9.3.0/transforms/b781723a4a1931643c87121e6402aa63/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
 MERGED from [androidx.room:room-runtime:2.6.1] /home/marcos/.gradle/caches/9.3.0/transforms/7e3f4dcb5e80319036bd7ecb50ea0be6/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.1] /home/marcos/.gradle/caches/9.3.0/transforms/7e3f4dcb5e80319036bd7ecb50ea0be6/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/marcos/.gradle/caches/9.3.0/transforms/b8d3525c005d118296c8867027429909/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/marcos/.gradle/caches/9.3.0/transforms/b8d3525c005d118296c8867027429909/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/marcos/.gradle/caches/9.3.0/transforms/b11817eeb7c9ba448af0f0a0054e4526/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/marcos/.gradle/caches/9.3.0/transforms/b11817eeb7c9ba448af0f0a0054e4526/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/marcos/.gradle/caches/9.3.0/transforms/96cf9148c0ef602618ef05ef4186913e/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/marcos/.gradle/caches/9.3.0/transforms/96cf9148c0ef602618ef05ef4186913e/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
@@ -200,16 +202,18 @@ uses-sdk
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.camera:camera-video:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/42a928a436996a75134fe1fa5b83adae/transformed/jetified-camera-video-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-video:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/42a928a436996a75134fe1fa5b83adae/transformed/jetified-camera-video-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-view:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/8206d2d62509208de93f0cf10d9dff65/transformed/jetified-camera-view-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-view:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/8206d2d62509208de93f0cf10d9dff65/transformed/jetified-camera-view-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/5a3e0557c322d2580d17fe86bf39ea47/transformed/jetified-camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-lifecycle:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/5a3e0557c322d2580d17fe86bf39ea47/transformed/jetified-camera-lifecycle-1.3.4/AndroidManifest.xml:5:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-video:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/8c6c9671a471d292c8e8f5d3da0693e0/transformed/jetified-camera-video-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/8c6c9671a471d292c8e8f5d3da0693e0/transformed/jetified-camera-video-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-mlkit-vision:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deb27142db8fc34aeb1c331280b39b4b/transformed/jetified-camera-mlkit-vision-1.4.0/AndroidManifest.xml:18:5-20:70
+MERGED from [androidx.camera:camera-mlkit-vision:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deb27142db8fc34aeb1c331280b39b4b/transformed/jetified-camera-mlkit-vision-1.4.0/AndroidManifest.xml:18:5-20:70
+MERGED from [androidx.camera:camera-view:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deda970766ca04d071debc1cc1752328/transformed/jetified-camera-view-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deda970766ca04d071debc1cc1752328/transformed/jetified-camera-view-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/fff698a263cc9bc0a7e8b2a5842b86ba/transformed/jetified-camera-lifecycle-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/fff698a263cc9bc0a7e8b2a5842b86ba/transformed/jetified-camera-lifecycle-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.mlkit:text-recognition:16.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/379e2a6a0dbd6c5cab174cf5d6c425b6/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:text-recognition:16.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/379e2a6a0dbd6c5cab174cf5d6c425b6/transformed/jetified-text-recognition-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:19.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/9a0266c22c1083e863cef3e362b00775/transformed/jetified-play-services-mlkit-text-recognition-19.0.0/AndroidManifest.xml:6:5-44
@@ -360,8 +364,16 @@ MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/marcos/.gradle/caches
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/3a48ba895fc9b87af76efd4fe43c4f43/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/daf53e71c56c4fedad8b4ec098e86fee/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/daf53e71c56c4fedad8b4ec098e86fee/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/3f14b405063178bf56fbccf1c5868ed5/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/3f14b405063178bf56fbccf1c5868ed5/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/daebd0bea398732ff749de3f5d57387c/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/daebd0bea398732ff749de3f5d57387c/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/3739525ea6fe5173bfe6e9c4019a9111/transformed/jetified-tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/3739525ea6fe5173bfe6e9c4019a9111/transformed/jetified-tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/marcos/.gradle/caches/9.3.0/transforms/c36a9ffabcf100874b0efa3439ddd9d0/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/marcos/.gradle/caches/9.3.0/transforms/c36a9ffabcf100874b0efa3439ddd9d0/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/88c3e965b540a95041e2f52b190a4e57/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/marcos/.gradle/caches/9.3.0/transforms/88c3e965b540a95041e2f52b190a4e57/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/2e789d60a40633f0ba350177c1930819/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
@@ -370,8 +382,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marco
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/01bda1223b3e107235fa04c4eb2a8421/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/marcos/.gradle/caches/9.3.0/transforms/82273103e546a819ebf025aa4a6c99bc/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/marcos/.gradle/caches/9.3.0/transforms/82273103e546a819ebf025aa4a6c99bc/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/marcos/.gradle/caches/9.3.0/transforms/c7efb03038c9edb882d430a935f55067/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/marcos/.gradle/caches/9.3.0/transforms/b8d3525c005d118296c8867027429909/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/marcos/.gradle/caches/9.3.0/transforms/b8d3525c005d118296c8867027429909/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/marcos/.gradle/caches/9.3.0/transforms/b11817eeb7c9ba448af0f0a0054e4526/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
@@ -382,36 +392,34 @@ MERGED from [com.google.firebase:firebase-components:16.1.0] /home/marcos/.gradl
 MERGED from [com.google.firebase:firebase-components:16.1.0] /home/marcos/.gradle/caches/9.3.0/transforms/e81c599d60f1bc3d0059d40bf4985d81/transformed/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/marcos/.gradle/caches/9.3.0/transforms/d4112276fd1aca98d95bd56f6bf80537/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/marcos/.gradle/caches/9.3.0/transforms/d4112276fd1aca98d95bd56f6bf80537/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/marcos/.gradle/caches/9.3.0/transforms/68293c562fa4a6dbd0d71ff742c00bc7/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/571591f529dc50b1eb8c9143dc28cd1e/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/571591f529dc50b1eb8c9143dc28cd1e/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/db3e4bfa5f3cccef0fa90db3f10693bc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/db3e4bfa5f3cccef0fa90db3f10693bc/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/marcos/.gradle/caches/9.3.0/transforms/96cf9148c0ef602618ef05ef4186913e/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/marcos/.gradle/caches/9.3.0/transforms/96cf9148c0ef602618ef05ef4186913e/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	tools:overrideLibrary
+		ADDED from [androidx.camera:camera-mlkit-vision:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/deb27142db8fc34aeb1c331280b39b4b/transformed/jetified-camera-mlkit-vision-1.4.0/AndroidManifest.xml:20:9-67
 	android:targetSdkVersion
 		INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/marcos/Documentos/krafter-tracker/android/app/src/main/AndroidManifest.xml
 service#androidx.camera.core.impl.MetadataHolderService
-ADDED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:29:9-33:78
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
-MERGED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:24:9-33:19
+ADDED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:24:9-33:19
 	android:enabled
-		ADDED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:31:13-36
+		ADDED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:31:13-36
 	android:exported
-		ADDED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:32:13-37
+		ADDED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:32:13-37
 	tools:ignore
-		ADDED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:33:13-75
+		ADDED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:33:13-75
 	android:name
-		ADDED from [androidx.camera:camera-core:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/b46f630e10568c38ce2ed1ee10943b0f/transformed/jetified-camera-core-1.3.4/AndroidManifest.xml:30:13-75
+		ADDED from [androidx.camera:camera-core:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/7aa49313ec03788e60e9d462b8268272/transformed/jetified-camera-core-1.4.0/AndroidManifest.xml:30:13-75
 meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
-ADDED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:30:13-32:89
+ADDED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:30:13-32:89
 	android:value
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:32:17-86
+		ADDED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:32:17-86
 	android:name
-		ADDED from [androidx.camera:camera-camera2:1.3.4] /home/marcos/.gradle/caches/9.3.0/transforms/9f0fd427912c6ba9d1caba53cf528818/transformed/jetified-camera-camera2-1.3.4/AndroidManifest.xml:31:17-103
+		ADDED from [androidx.camera:camera-camera2:1.4.0] /home/marcos/.gradle/caches/9.3.0/transforms/b7ae64cdc52974895156160fe0b31cc8/transformed/jetified-camera-camera2-1.4.0/AndroidManifest.xml:31:17-103
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
 ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] /home/marcos/.gradle/caches/9.3.0/transforms/337a2a780e0c5b88a4094fedfb264563/transformed/jetified-play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.mlkit:vision-common:17.3.0] /home/marcos/.gradle/caches/9.3.0/transforms/8463aae8ea19488371056f66be16ab2a/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:9:9-15:19

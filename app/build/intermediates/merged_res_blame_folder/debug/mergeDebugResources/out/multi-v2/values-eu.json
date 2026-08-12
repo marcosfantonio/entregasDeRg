@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-66:/values-eu/values-eu.xml",
+            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-69:/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "/home/marcos/.gradle/caches/9.3.0/transforms/854b2ccf7666da83b8b1f9481fa6bb73/transformed/jetified-ui-release/res/values-eu/values-eu.xml",

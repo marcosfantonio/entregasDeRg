@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-66:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-69:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/home/marcos/.gradle/caches/9.3.0/transforms/3eab976b652f5f3dd876d7cce68f5256/transformed/jetified-material3-release/res/values-en-rIN/values-en-rIN.xml",

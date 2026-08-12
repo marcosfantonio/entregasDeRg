@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-66:/values-zu/values-zu.xml",
+            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-69:/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/home/marcos/.gradle/caches/9.3.0/transforms/b781723a4a1931643c87121e6402aa63/transformed/core-1.13.1/res/values-zu/values-zu.xml",

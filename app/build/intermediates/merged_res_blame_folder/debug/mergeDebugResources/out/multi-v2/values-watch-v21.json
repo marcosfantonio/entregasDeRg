@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-66:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-69:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "/home/marcos/.gradle/caches/9.3.0/transforms/a74c45afefd7b4ffd0d54894b439631a/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-66:/values-si/values-si.xml",
+            "outputFile": "com.fantonio.entregarg.app-mergeDebugResources-69:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/home/marcos/.gradle/caches/9.3.0/transforms/a74c45afefd7b4ffd0d54894b439631a/transformed/appcompat-1.6.1/res/values-si/values-si.xml",

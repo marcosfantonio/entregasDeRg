@@ -10,7 +10,6 @@ import androidx.lifecycle.viewModelScope
 import com.fantonio.entregarg.data.local.AppDatabase
 import com.fantonio.entregarg.data.model.Identity
 import com.fantonio.entregarg.data.repository.IdentityRepository
-import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import com.opencsv.CSVReader
@@ -36,6 +35,11 @@ data class ScannedIdentity(
     val isDuplicate: Boolean
 )
 
+data class DetectedText(
+    val text: String,
+    val boundingBox: android.graphics.Rect
+)
+
 @OptIn(FlowPreview::class)
 class IdentityViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: IdentityRepository
@@ -56,6 +60,9 @@ class IdentityViewModel(application: Application) : AndroidViewModel(application
         private set
 
     var scannedResults by mutableStateOf<List<ScannedIdentity>>(emptyList())
+        private set
+
+    var detectedRects by mutableStateOf<List<android.graphics.Rect>>(emptyList())
         private set
 
     var isProcessingImage by mutableStateOf(false)
@@ -167,90 +174,109 @@ class IdentityViewModel(application: Application) : AndroidViewModel(application
         }
     }
 
-    fun processScannedImage(image: android.media.Image, rotationDegrees: Int, onComplete: () -> Unit) {
-        val inputImage = InputImage.fromMediaImage(image, rotationDegrees)
-        val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
-        
-        isProcessingImage = true
-        recognizer.process(inputImage)
-            .addOnSuccessListener { visionText ->
-                viewModelScope.launch {
-                    val allLines = visionText.textBlocks
-                        .flatMap { it.lines }
-                        .sortedBy { it.boundingBox?.top ?: 0 } // Ordena visualmente de cima para baixo
-                    
-                    var startProcessing = false
-                    val linesToProcess = mutableListOf<String>()
-                    val dateRegex = Regex("\\d{2}/\\d{2}/\\d{4}")
-                    
-                    for (line in allLines) {
-                        val text = line.text.trim()
-                        
-                        // Verifica se é a linha de cabeçalho para começar
-                        if (!startProcessing && 
-                            text.contains("RG", ignoreCase = true) && 
-                            text.contains("LOTE", ignoreCase = true) && 
-                            text.contains("PESSOA", ignoreCase = true)) {
-                            startProcessing = true
-                            continue // Pula o próprio cabeçalho
-                        }
-                        
-                        // Verifica se encontrou uma data no formato dd/mm/yyyy para parar
-                        if (startProcessing && dateRegex.containsMatchIn(text)) {
-                            break
-                        }
-                        
-                        if (startProcessing) {
-                            linesToProcess.add(text)
-                        }
-                    }
+    fun onTextDetected(visionText: com.google.mlkit.vision.text.Text) {
+        detectedRects = visionText.textBlocks.mapNotNull { it.boundingBox }
+    }
 
-                    val newIdentities = mutableListOf<Identity>()
-                    val cpfRegex = Regex("\\d{3}[.\\s]?\\d{3}[.\\s]?\\d{3}[-\\s]?\\d{2}")
+    fun processScannedImage(visionText: com.google.mlkit.vision.text.Text, onComplete: () -> Unit) {
+        viewModelScope.launch {
+            val allLines = visionText.textBlocks
+                .flatMap { it.lines }
+                .sortedBy { it.boundingBox?.top ?: 0 }
+            
+            var startProcessing = false
+            val linesToProcess = mutableListOf<com.google.mlkit.vision.text.Text.Line>()
+            val dateRegex = Regex("\\d{2}/\\d{2}/\\d{4}")
+            
+            // Cabeçalho esperado: RG   Nº Lote   Pessoa
+            for (line in allLines) {
+                val text = line.text.trim().uppercase()
+                
+                if (!startProcessing) {
+                    val hasRg = text.contains("RG")
+                    val hasLote = text.contains("LOTE") || text.contains("LT")
+                    val hasPessoa = text.contains("PESSOA") || text.contains("NOME")
                     
-                    // Processamento das linhas filtradas
-                    linesToProcess.forEach { line ->
-                        val cpfMatch = cpfRegex.find(line)
-                        if (cpfMatch != null) {
-                            val cpf = cpfMatch.value.replace(Regex("[.\\-\\s]"), "")
-                            
-                            // Tenta extrair o lote (geralmente um número ou código curto na mesma linha ou próxima)
-                            // Se o CPF está na linha, o resto pode ser Nome e Lote
-                            val textWithoutCpf = line.replace(cpfMatch.value, "").trim()
-                            
-                            // Heurística: se houver um número isolado, pode ser o lote
-                            val parts = textWithoutCpf.split(Regex("\\s+"))
-                            val lote = parts.find { it.all { char -> char.isLetterOrDigit() } && it.length <= 5 } ?: "S/L"
-                            val nome = parts.filter { it != lote }.joinToString(" ").trim()
-
-                            if (nome.length > 2) {
-                                newIdentities.add(Identity(nome = nome, cpf = cpf, lote = lote))
-                            }
-                        }
+                    if (hasRg || (hasLote && hasPessoa)) {
+                        startProcessing = true
+                        continue
                     }
-
-                    // Se não encontrou nada estruturado, tenta a busca global apenas na área permitida
-                    if (newIdentities.isEmpty() && linesToProcess.isNotEmpty()) {
-                        val combinedText = linesToProcess.joinToString(" ")
-                        cpfRegex.findAll(combinedText).forEach { match ->
-                            val cpf = match.value.replace(Regex("[.\\-\\s]"), "")
-                            newIdentities.add(Identity(nome = "Detectado em Lote", cpf = cpf, lote = "S/L"))
-                        }
-                    }
-
-                    // Verifica duplicatas
-                    val existingCpfs = repository.getAll().map { it.cpf }.toSet()
-                    scannedResults = newIdentities.distinctBy { it.cpf }.map { 
-                        ScannedIdentity(it, existingCpfs.contains(it.cpf))
-                    }
-                    
-                    isProcessingImage = false
-                    onComplete()
+                }
+                
+                // Para se encontrar a data de rodapé ou o indicador de página
+                if (startProcessing && (dateRegex.containsMatchIn(text) || text.contains("PÁG", ignoreCase = true))) {
+                    break
+                }
+                
+                if (startProcessing) {
+                    linesToProcess.add(line)
                 }
             }
-            .addOnFailureListener {
-                isProcessingImage = false
+
+            val newIdentities = mutableListOf<Identity>()
+            // RG costuma ter de 7 a 11 dígitos
+            val rgRegex = Regex("\\d{7,11}")
+            // Lote no exemplo tem 6 dígitos
+            val loteRegex = Regex("\\d{6}")
+            
+            linesToProcess.forEach { line ->
+                val text = line.text.trim()
+                
+                // Tenta encontrar RG e Lote na linha
+                val rgMatch = rgRegex.find(text)
+                val loteMatch = loteRegex.find(text)
+                
+                if (rgMatch != null) {
+                    val rg = rgMatch.value
+                    
+                    // Se o lote não estiver na mesma linha de texto detectada, 
+                    // procuramos o próximo número de 6 dígitos
+                    val lote = loteMatch?.value ?: ""
+                    
+                    // Extração do Nome: removemos RG e Lote do texto original
+                    var nome = text.replace(rg, "").replace(lote, "").trim()
+                    
+                    // Limpeza de caracteres residuais (como o "Nº" ou símbolos de assinatura)
+                    nome = nome.replace(Regex("^[^A-Z]+"), "").trim()
+                    
+                    // Se o nome vier com a assinatura (muito comum à direita), 
+                    // pegamos apenas a parte em maiúsculas que parece ser o nome
+                    val nomeParts = nome.split(" ")
+                    val cleanNome = nomeParts.takeWhile { part -> 
+                        part.length > 1 && part.all { it.isUpperCase() || it == '-' } 
+                    }.joinToString(" ")
+
+                    if (cleanNome.length > 3) {
+                        newIdentities.add(
+                            Identity(
+                                nome = cleanNome,
+                                cpf = rg,
+                                lote = lote.ifEmpty { "S/L" }
+                            )
+                        )
+                    }
+                }
             }
+
+            // Fallback: Se não encontrou nada estruturado, tenta busca por blocos
+            if (newIdentities.isEmpty()) {
+                visionText.textBlocks.forEach { block ->
+                    val blockText = block.text.trim()
+                    rgRegex.findAll(blockText).forEach { match ->
+                        val rg = match.value
+                        newIdentities.add(Identity(nome = "Detectado em Bloco", cpf = rg, lote = "S/L"))
+                    }
+                }
+            }
+
+            val existingCpfs = repository.getAll().map { it.cpf }.toSet()
+            scannedResults = newIdentities.distinctBy { it.cpf }.map { 
+                ScannedIdentity(it, existingCpfs.contains(it.cpf))
+            }
+            
+            isProcessingImage = false
+            onComplete()
+        }
     }
 
     fun confirmScannedIdentities() {
