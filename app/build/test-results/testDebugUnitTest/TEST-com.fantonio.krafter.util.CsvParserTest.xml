@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fantonio.krafter.util.CsvParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-12T12:05:10.780Z" hostname="cachyos-ma" time="0.052">
+  <properties/>
+  <testcase name="parseIdentities without header should return list of identities" classname="com.fantonio.krafter.util.CsvParserTest" time="0.044"/>
+  <testcase name="parseIdentities with header should return list of identities" classname="com.fantonio.krafter.util.CsvParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
